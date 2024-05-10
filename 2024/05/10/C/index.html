@@ -1,0 +1,274 @@
+<!DOCTYPE html><html lang="en" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>C++ | Hexo</title><meta name="author" content="John Doe"><meta name="copyright" content="John Doe"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="C&#x2F;C++:C++有什么关键字​	 static：     static修饰符可用于修饰全局变量、局部变量或函数，三种场景下的作用分别为：  修饰全局变量时：被修饰的变量称为静态全局变量。该全局变量仅在当前文件内可见(相当于限制了全局变量的可见范围，全局变量所有文件都可见)。  修饰局部变量时：被修饰的变量称为静态局部变量。变量仅初始化一次，而且由于变量是存储在数据段，而非堆或栈上，因此">
+<meta property="og:type" content="article">
+<meta property="og:title" content="C++">
+<meta property="og:url" content="http://example.com/2024/05/10/C/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="C&#x2F;C++:C++有什么关键字​	 static：     static修饰符可用于修饰全局变量、局部变量或函数，三种场景下的作用分别为：  修饰全局变量时：被修饰的变量称为静态全局变量。该全局变量仅在当前文件内可见(相当于限制了全局变量的可见范围，全局变量所有文件都可见)。  修饰局部变量时：被修饰的变量称为静态局部变量。变量仅初始化一次，而且由于变量是存储在数据段，而非堆或栈上，因此">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png">
+<meta property="article:published_time" content="2024-05-10T05:32:38.000Z">
+<meta property="article:modified_time" content="2024-05-10T05:34:45.464Z">
+<meta property="article:author" content="John Doe">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png"><link rel="shortcut icon" href="/img/favicon.png"><link rel="canonical" href="http://example.com/2024/05/10/C/index.html"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css?v=4.13.0"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.5.1/css/all.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0.33/dist/fancybox/fancybox.min.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = {
+  root: '/',
+  algolia: undefined,
+  localSearch: undefined,
+  translate: undefined,
+  noticeOutdate: undefined,
+  highlight: {"plugin":"highlight.js","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false},
+  copy: {
+    success: 'Copy Successful',
+    error: 'Copy Error',
+    noSupport: 'Browser Not Supported'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '',
+  dateSuffix: {
+    just: 'Just now',
+    min: 'minutes ago',
+    hour: 'hours ago',
+    day: 'days ago',
+    month: 'months ago'
+  },
+  copyright: undefined,
+  lightbox: 'fancybox',
+  Snackbar: undefined,
+  infinitegrid: {
+    js: 'https://cdn.jsdelivr.net/npm/@egjs/infinitegrid@4.11.1/dist/infinitegrid.min.js',
+    buttonText: 'Load More'
+  },
+  isPhotoFigcaption: false,
+  islazyload: false,
+  isAnchor: false,
+  percent: {
+    toc: true,
+    rightside: false,
+  },
+  autoDarkmode: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: 'C++',
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isToc: true,
+  postUpdate: '2024-05-10 13:34:45'
+}</script><script>(win=>{
+      win.saveToLocal = {
+        set: (key, value, ttl) => {
+          if (ttl === 0) return
+          const now = Date.now()
+          const expiry = now + ttl * 86400000
+          const item = {
+            value,
+            expiry
+          }
+          localStorage.setItem(key, JSON.stringify(item))
+        },
+      
+        get: key => {
+          const itemStr = localStorage.getItem(key)
+      
+          if (!itemStr) {
+            return undefined
+          }
+          const item = JSON.parse(itemStr)
+          const now = Date.now()
+      
+          if (now > item.expiry) {
+            localStorage.removeItem(key)
+            return undefined
+          }
+          return item.value
+        }
+      }
+    
+      win.getScript = (url, attr = {}) => new Promise((resolve, reject) => {
+        const script = document.createElement('script')
+        script.src = url
+        script.async = true
+        script.onerror = reject
+        script.onload = script.onreadystatechange = function() {
+          const loadState = this.readyState
+          if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+          script.onload = script.onreadystatechange = null
+          resolve()
+        }
+
+        Object.keys(attr).forEach(key => {
+          script.setAttribute(key, attr[key])
+        })
+
+        document.head.appendChild(script)
+      })
+    
+      win.getCSS = (url, id = false) => new Promise((resolve, reject) => {
+        const link = document.createElement('link')
+        link.rel = 'stylesheet'
+        link.href = url
+        if (id) link.id = id
+        link.onerror = reject
+        link.onload = link.onreadystatechange = function() {
+          const loadState = this.readyState
+          if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+          link.onload = link.onreadystatechange = null
+          resolve()
+        }
+        document.head.appendChild(link)
+      })
+    
+      win.activateDarkMode = () => {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = () => {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+        if (t === 'dark') activateDarkMode()
+        else if (t === 'light') activateLightMode()
+      
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+      const detectApple = () => {
+        if(/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+          document.documentElement.classList.add('apple')
+        }
+      }
+      detectApple()
+    })(window)</script><meta name="generator" content="Hexo 7.2.0"></head><body><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">Articles</div><div class="length-num">8</div></a><a href="/tags/"><div class="headline">Tags</div><div class="length-num">0</div></a><a href="/categories/"><div class="headline">Categories</div><div class="length-num">0</div></a></div><hr class="custom-hr"/></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header"><nav id="nav"><span id="blog-info"><a href="/" title="Hexo"><span class="site-name">Hexo</span></a></span><div id="menus"><div id="toggle-menu"><a class="site-page" href="javascript:void(0);"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">C++</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">Created</span><time class="post-meta-date-created" datetime="2024-05-10T05:32:38.000Z" title="Created 2024-05-10 13:32:38">2024-05-10</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">Updated</span><time class="post-meta-date-updated" datetime="2024-05-10T05:34:45.464Z" title="Updated 2024-05-10 13:34:45">2024-05-10</time></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title="C++"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">Post Views:</span><span id="busuanzi_value_page_pv"><i class="fa-solid fa-spinner fa-spin"></i></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><h1 id="C-C"><a href="#C-C" class="headerlink" title="C&#x2F;C++:"></a>C&#x2F;C++:</h1><h2 id="C-有什么关键字"><a href="#C-有什么关键字" class="headerlink" title="C++有什么关键字"></a>C++有什么关键字</h2><p>​	 static：<br>     static修饰符可用于修饰全局变量、局部变量或函数，三种场景下的作用分别为：</p>
+<ol>
+<li><p>修饰全局变量时：被修饰的变量称为静态全局变量。该全局变量仅在当前文件内可见(相当于限制了全局变量的可见范围，全局变量所有文件都可见)。</p>
+</li>
+<li><p>修饰局部变量时：被修饰的变量称为静态局部变量。变量仅初始化一次，而且由于变量是存储在数据段，而非堆或栈上，因此局部变量在离开作用域后不会被销毁，变量值始终有效直至程序结束。</p>
+</li>
+<li><p>修饰函数时：被修饰的函数称为静态函数。该函数仅在当前文件内可见。<br>   可以在头文件中定义static变量，但是包含该头文件的源文件会有命名相同但实际不同的static变量</p>
+<p>   volatile：<br>    当有变量使用volatile关键字声明变量值的时候，那么系统就会从他的内存所在地来读取数据，而不是从寄存器访问，也就是说对声明的变量来说，不再进行优化了，防止编译器优化导致变量值的读写异常<br>extern：<br>    当extern声明在变量或者函数之前时，表示这个变量或者函数是在其他文件中声明或者定义的，在这里拿来使用，也就不在这里分配空间<br>    extern”C”:因为在c++中，函数是可以重载的，但是对于c来说，不存在重载这个说法，对于声明了extern的函数来说，表示这个函数使用c的方式编译<br>              另外使用extern”C”也可以使用c语言库里的函数(包括使用extern”C”包括c语言头文件)<br>malloc&#x2F;free和new&#x2F;delete：<br>    共同点：都是从堆上分配空间，并且需要用户手动释放<br>    区别：malloc和free是函数，而new&#x2F;delete是操作符，并且前者在申请空间时不会初始化，并且需要手动计算空间大小并传递，而后者在申请空间时可以进行初始化，并且不用计算空间大小，后面跟上空间的类型就行，malloc需要进行类型强转。<br>union和struct：<br>    union和struct最大的区别在于内存的利用<br>    struct结构体中各个成员拥有自己的内存，各自使用互不干涉<br>    union各成员共用一块内存，并且同一时间只有一个成员能够得到这块内存的使用权，</p>
+</li>
+</ol>
+<h2 id="C-从代码到可执行程序之间经历了什么"><a href="#C-从代码到可执行程序之间经历了什么" class="headerlink" title="C++从代码到可执行程序之间经历了什么"></a>C++从代码到可执行程序之间经历了什么</h2><p>（1）预编译<br>主要处理源代码文件中的以“#”开头的预编译指令，例如展开宏定义，处理预编译指令<br>（2）编译<br>把预编译之后生成的xxx.i或xxx.ii文件，进行一系列词法分析、语法分析、语义分析及优化后，生成相应的汇编代码文件，生成汇编文件 xxx.s。<br>（3）汇编<br>将汇编代码转变成机器可以执行的指令，生成目标文件xxx.o(Linux下)、xxx.obj(Window下)<br>（4）链接<br>将目标文件进行链接，从而形成一个可以执行的程序。链接分为静态链接和动态链接。</p>
+<h2 id="C语言有哪些存储类型："><a href="#C语言有哪些存储类型：" class="headerlink" title="C语言有哪些存储类型："></a>C语言有哪些存储类型：</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">auto(自动)，extern(外部)，register(寄存器)，static(静态)</span><br></pre></td></tr></table></figure>
+
+<h2 id="map与set的区别和底层实现："><a href="#map与set的区别和底层实现：" class="headerlink" title="map与set的区别和底层实现："></a>map与set的区别和底层实现：</h2><p>​	1、底层实现都是红黑树，而unordered_map底层是hash表实现的</p>
+<p>​	2、map是键值对，关键字起到索引作用，值表示与索引相关联的数据，set是关键字的集合并且每个元素只包含一个关键字。</p>
+<p>​	3、set迭代器是const不能修改元素值，map允许修改value不能修改key</p>
+<p>​	4、map支持下标操作，set不支持。</p>
+<h2 id="vector和list的区别是什么-数组和链表"><a href="#vector和list的区别是什么-数组和链表" class="headerlink" title="vector和list的区别是什么(数组和链表)"></a>vector和list的区别是什么(数组和链表)</h2><p>1、vector为数组实现，list为双向链表</p>
+<p>2、vector支持随机访问，list不行</p>
+<p>3、vector顺序储存，list随机存储</p>
+<p>4、vector一次性分配内存，不够才二倍扩容，list一个个分配内存</p>
+<p>5、vector随机访问性能好，插入删除比较慢(因为数组每次插入和删除都要讲后面的所有数据后移或者前进一位)，list插入删除快，但是不支持随机访问</p>
+<h2 id="指针和引用的区别"><a href="#指针和引用的区别" class="headerlink" title="指针和引用的区别"></a>指针和引用的区别</h2><p>指针可以为空指针，而引用必须进行初始化；<br>指针可以改变指向，而引用在初始化之后就不能改变；<br>指针时一个变量，存储的是地址，引用只是一个别名</p>
+<p>什么时候使用指针，或者使用引用？<br>一般使用引用是为了避免对一些大类型的容器进行拷贝，因为使用指针传参是将指针的值拷贝过来，因此如果是类对象这种大类型的，就是用引用，如果是数组，那么就使用指针</p>
+<h2 id="排序的时间复杂度："><a href="#排序的时间复杂度：" class="headerlink" title="排序的时间复杂度："></a>排序的时间复杂度：</h2><p>快速排序的时间复杂度：最坏情况下是O(n2)，平均情况下是O(nlogn）<br>堆排序：O(nlogn）<br>归并排序：O(nlogn）<br>冒泡O(n2)<br>选择O(n2)<br>插入O(n2)</p>
+<h2 id="C-中struct和class的区别"><a href="#C-中struct和class的区别" class="headerlink" title="C++中struct和class的区别"></a>C++中struct和class的区别</h2><p>相同点<br>都用来自定义数据结构，两者都拥有公有和私有部分；<br>class完成的工作同样可以使用struct完成；</p>
+<p>不同点<br>struct默认是公有的，class则默认是私有的；<br>class默认是private继承， 而struct默认是public继承;<br>struct一般用于轻量级注重性能的场景中，class一般用于复杂的场景中；</p>
+<h2 id="strcpy和memcpy的区别"><a href="#strcpy和memcpy的区别" class="headerlink" title="strcpy和memcpy的区别"></a>strcpy和memcpy的区别</h2><p>1、复制的内容不同。strcpy只能复制字符串，而memcpy可以复制任意类型的内容</p>
+<p>2、实现的方法不同。strcpy不需要指定长度，它遇到被复制字符的串结束符”\0”才结束，所以容易溢出。memcpy则是根据其第3个参数决定复制的长度。</p>
+<h2 id="全局变量和static全局变量的区别"><a href="#全局变量和static全局变量的区别" class="headerlink" title="全局变量和static全局变量的区别"></a>全局变量和static全局变量的区别</h2><p>相同点：<br>都是静态存储：全局变量本身就是静态存储方式，静态全局变量当然也是静态存储方式。</p>
+<p>不同点：<br>作用域：非静态全局变量的作用域是整个源程序，当一个源程序由多个原文件组成时，非静态的全局变量在各个源文件中都是有效的。静态全局变量则限制了其作用域，即只在定义该变量的源文件内有效。</p>
+<h2 id="快速排序和归并排序"><a href="#快速排序和归并排序" class="headerlink" title="快速排序和归并排序"></a>快速排序和归并排序</h2><p>归并排序和快排的相同点：<br>1，利用分治思想<br>2，具体实现都用递归<br>归并排序和快排的不同点：</p>
+<p>1，先分解再合并：归并排序先递归分解到一个元素，然后单个元素开始合并排序，自下而上的合并排序；<br>2，边分解边排序：快速排序每次都保证参照物左侧的数都小于参照值，右侧的大于参照值；是自上而下的排序；<br>3，归并排序不是原地排序，快速排序是原地排序，</p>
+<p>快速排序什么时候最好，什么时候最差：<br>最好：每次选择的点都能够正好的将序列分为大小接近相等的两部分<br>最差：原序列部分或者已经是有序的了，<br>每次都选择最小或者最大的点当哨位</p>
+<h2 id="sort函数内部如何实现"><a href="#sort函数内部如何实现" class="headerlink" title="sort函数内部如何实现"></a>sort函数内部如何实现</h2><p>sort不仅仅用了快速排序，还结合了插入排序和堆排序。<br>STL的sort算法，数据量大时采用快排算法。一旦分段后的数据量小于某个门槛（16），为避免快排的递归调用带来过大的额外负荷，就改用插入排序。如果递归层次过深，还会改用堆排序。</p>
+<h2 id="怎么解决递归过深引发的栈溢出问题？"><a href="#怎么解决递归过深引发的栈溢出问题？" class="headerlink" title="怎么解决递归过深引发的栈溢出问题？"></a>怎么解决递归过深引发的栈溢出问题？</h2><p>1：限制递归深度，可以将递归深度作为参数传递，达到一定限制后，结束递归<br>2：使用尾递归方法，因为函数调用会形成一个调用帧，而如果在函数A中在调用一个函数B，那么就会在A的调用帧上方在调用一个调用帧，以此类推，而尾递归是指在函数尾部进行递归调用，因为是在尾部，因此函数A的内部变量等信息用不到了，这样就不用保存函数A的调用帧，只需要将B的调用帧替代A的就好，</p>
+<h2 id="unordered-map-rehash过程"><a href="#unordered-map-rehash过程" class="headerlink" title="unordered_map rehash过程"></a>unordered_map rehash过程</h2><p>一般我们在使用unordered_map函数的时候，不会使用到rehash函数，当map容器已经填满时，unordered_map会自动调用rehash函数来增加容器的大小，同样的我们也可以自己手动的调用rehash函数来增加容器大小，将原来的元素重新映射到新的容器中</p>
+<h2 id="c-c-的区别："><a href="#c-c-的区别：" class="headerlink" title="c&#x2F;c++的区别："></a>c&#x2F;c++的区别：</h2><p>最主要的区别在于c是面向过程的，c++是面向对象的<br>他们的后缀不同，c的后缀是.c，c++的后缀是.cpp<br>c不支持函数重载，c++支持函数重载</p>
+<h2 id="虚函数和纯虚函数的区别："><a href="#虚函数和纯虚函数的区别：" class="headerlink" title="虚函数和纯虚函数的区别："></a>虚函数和纯虚函数的区别：</h2><p>虚函数是在基类中定义并实现了的，而纯虚函数是在基类中定义但是并没有实现，具体的实现要在子类中<br>子类继承了父类之后，子类也可以不对虚函数进行重写，但是对于纯虚函数来说，子类继承了父类之后，必须进行重写<br>带纯虚函数的类叫做抽象类，这种类不能直接生成对象，而只有被继承，并重写其虚函数后，才能使用</p>
+<h2 id="零拷贝"><a href="#零拷贝" class="headerlink" title="零拷贝"></a>零拷贝</h2><p>零拷贝就是一种避免 CPU 将数据从一块存储拷贝到另外一块存储的技术。<br>这其中也涉及到了emplace_back() push_back()的区别<br>使用push_back()函数需要调用拷贝构造函数，而使用emplace_back()插入的元素原地构造，不需要触发拷贝构造，效率更高。</p>
+<h2 id="一个空类会默认添加哪些函数"><a href="#一个空类会默认添加哪些函数" class="headerlink" title="一个空类会默认添加哪些函数"></a>一个空类会默认添加哪些函数</h2><ol>
+<li>Empty(); &#x2F;&#x2F; 默认构造函数 </li>
+<li>Empty( const Empty&amp; ); &#x2F;&#x2F; 默认拷贝构造函数 </li>
+<li>~Empty(); &#x2F;&#x2F; 析构函数 </li>
+<li>Empty&amp; operator&#x3D;( const Empty&amp; ); &#x2F;&#x2F; 默认赋值运算符函数</li>
+</ol>
+<h2 id="什么是一致性哈希"><a href="#什么是一致性哈希" class="headerlink" title="什么是一致性哈希"></a>什么是一致性哈希</h2><p>由于普通哈希算法实现的缓存负载均衡存在扩展能力和容错能力差问题，所以我们引入一致性哈希算法</p>
+<p>一致性哈希：就是普通取模哈希算法的改良版，哈希函数计算方法不变，只不过是通过构建环状的Hash空间代替普通的线性Hash空间，增强了扩展和容错能力</p>
+<h2 id="重载和覆盖-重写-的区别"><a href="#重载和覆盖-重写-的区别" class="headerlink" title="重载和覆盖(重写)的区别"></a>重载和覆盖(重写)的区别</h2><p>重载是水平的，覆盖是垂直的；<br>重载要求函数名相同，参数类型和数目不同，重写指的是在派生类中覆盖基类的同名函数，基类的函数必须是虚函数，参数类型，数量，返回值都相同。</p>
+<h2 id="浅拷贝和深拷贝的区别"><a href="#浅拷贝和深拷贝的区别" class="headerlink" title="浅拷贝和深拷贝的区别"></a>浅拷贝和深拷贝的区别</h2><p>浅拷贝只是拷贝一个指针，并没有新开辟一个地址，拷贝的指针和原来的指针指向同一块地址，如果原来的指针所指向的资源释放了，那么再释放浅拷贝的指针的资源就会出现错误。</p>
+<p>深拷贝不仅拷贝值，还开辟出一块新的空间用来存放新的值，即使原先的对象被析构掉，释放内存了也不会影响到深拷贝得到的值。</p>
+<p>浅拷贝在对象的拷贝创建时存在风险，即被拷贝的对象析构释放资源之后，拷贝对象析构时会再次释放一个已经释放的资源。而深拷贝的结果是两个对象之间没有任何关系，各自成员地址不同。</p>
+<h2 id="什么是内存泄露，如何检测与避免"><a href="#什么是内存泄露，如何检测与避免" class="headerlink" title="什么是内存泄露，如何检测与避免"></a>什么是内存泄露，如何检测与避免</h2><p>C程序中允许使用<code>malloc</code>等函数在堆上申请内存，若申请的内存一直未释放或无法释放，最后会导致堆可用的空间越来越少，严重的会导致程序崩溃。常见的内存泄漏原因是申请了内存，但内存不再使用后却不释放，就会导致内存泄漏</p>
+<p>避免：</p>
+<ul>
+<li>计数法：使用new或者malloc时，让该数+1，delete或free时，该数-1，程序执行完打印这个计数，如果不为0则表示存在内存泄露</li>
+<li>有new就有delete，有malloc就有free，保证它们一定成对出现</li>
+<li>尽量使用智能指针代替普通指针</li>
+<li>将基类的析构函数声明为虚函数</li>
+</ul>
+<h2 id="类成员初始化方式？区别？构造函数的执行顺序-？为什么用成员初始化列表会快一些"><a href="#类成员初始化方式？区别？构造函数的执行顺序-？为什么用成员初始化列表会快一些" class="headerlink" title="类成员初始化方式？区别？构造函数的执行顺序 ？为什么用成员初始化列表会快一些"></a>类成员初始化方式？区别？构造函数的执行顺序 ？为什么用成员初始化列表会快一些</h2><p>主要是初始化列表方式少调用一次构造函数</p>
+<ol>
+<li>直接在函数体内进行赋值初始化；</li>
+<li>初始化列表进行初始化</li>
+</ol>
+<p>这两种方式的主要区别在于：</p>
+<p>构造函数的执行顺序是成员变量的声明顺序</p>
+<p>对于在函数体中初始化，是在所有的数据成员被分配内存空间后才进行的。</p>
+<p>列表初始化是给数据成员分配内存空间时就进行初始化，初始化这个数据成员此时函数体还未执行，因为用初始化列表会少调用一次构造函数，快一些</p>
+<h2 id="总结一下静态绑定和动态绑定的区别："><a href="#总结一下静态绑定和动态绑定的区别：" class="headerlink" title="总结一下静态绑定和动态绑定的区别："></a>总结一下静态绑定和动态绑定的区别：</h2><ul>
+<li>阶段：静态绑定发生在编译期，动态绑定发生在运行期；</li>
+<li>更改：动态绑定的动态类型可以更改，但是静态类型无法更改；</li>
+<li>情况：在继承体系中只有虚函数使用的是动态绑定，其他的全部是静态绑定；</li>
+</ul>
+<p>这个具体体现就是，当一个基类中的函数不是虚函数时，但是派生类中也有一个同名函数，这样当去声明定义一个派生类时，他具体调用哪个函数由这个对象具体的类型去确定，但是如果派生类继承了一个虚函数，那么就由这个指针指向的类型确定。</p>
+<p>虚函数才具有动态绑定</p>
+<h2 id="虚函数表"><a href="#虚函数表" class="headerlink" title="虚函数表"></a>虚函数表</h2><p>虚函数表（Virtual Function Table，简称 vtable）是 C++ 中用于实现多态性的关键机制之一。编译器在发现基类中有虚函数时，会自动为每个含有虚函数的类生成一份虚表，该表是一个一维数组，虚表里保存了虚函数的入口地址</p>
+<p>虚函数表的具体用途包括：</p>
+<p>实现动态绑定（Dynamic Binding）： 虚函数表用于在运行时确定对象调用的是哪个版本的虚函数。通过基类指针或引用调用虚函数时，程序会根据对象的实际指向的类型来调用对应的虚函数，而不是根据指针或引用的类型。这样就实现了运行时多态性。<br>支持抽象基类： 抽象基类是指包含纯虚函数的类，纯虚函数没有具体的实现，必须由派生类提供实现。通过在虚函数表中存储指向纯虚函数的指针，使得派生类可以覆盖基类的纯虚函数，从而实现多态性。<br>总之，虚函数表的存在使得 C++ 能够在运行时确定对象的实际类型，并且根据实际类型调用对应的虚函数，从而实现多态性和灵活的对象行为。</p>
+<p><strong>虚表指针</strong>：在含有虚函数的类实例化对象时，对象地址的前四个字节存储的指向虚表的指针(每个对象的前四个字节中保存一个虚表指针，这个指针指向对象所属类的虚表)</p>
+<h2 id="为什么析构函数一般写成虚函数"><a href="#为什么析构函数一般写成虚函数" class="headerlink" title="为什么析构函数一般写成虚函数"></a>为什么析构函数一般写成虚函数</h2><p>如果基类的析构函数没有声明为虚函数，那么在调用基类指针的析构函数时，不管这个基类指针实际指向的对象是哪个，他只会调用基类指针的析构函数(因为是静态绑定)，所以基类的一些派生类对象没有进行析构，这样就会导致内存泄漏，只有将析构函数设置为虚函数，这样当基类指针指向派生类对象时，会先调用派生类的析构函数，之后因为派生类的虚构函数是继承自基类的，所以会自动去调用基类的析构函数，因此当删除基类的指针时，派生类的对象也会完全释放</p>
+<h2 id="为什么构造函数不能是虚函数"><a href="#为什么构造函数不能是虚函数" class="headerlink" title="为什么构造函数不能是虚函数"></a>为什么构造函数不能是虚函数</h2><p>1：虚函数的调用是通过虚函数表来调用的，而虚函数表是在对象构造完成之后才建立的，而如果把构造函数定义为虚函数，那么对象还没有构造完成，因此不知道调用的是哪个虚函数</p>
+<h2 id="什么时候会调用拷贝构造函数"><a href="#什么时候会调用拷贝构造函数" class="headerlink" title="什么时候会调用拷贝构造函数"></a>什么时候会调用拷贝构造函数</h2><p>1：当对象被当作函数参数传递的时候<br>2：当初始化的时候传入的是一个本类的对象<br>3：类的对象被当做是函数返回值</p>
+<h2 id="析构函数可以抛出异常吗？为什么不能抛出异常？除了资源泄露，还有其他需考虑的因素吗？"><a href="#析构函数可以抛出异常吗？为什么不能抛出异常？除了资源泄露，还有其他需考虑的因素吗？" class="headerlink" title="析构函数可以抛出异常吗？为什么不能抛出异常？除了资源泄露，还有其他需考虑的因素吗？"></a>析构函数可以抛出异常吗？为什么不能抛出异常？除了资源泄露，还有其他需考虑的因素吗？</h2><p>一般尽量不能让析构函数抛出异常，虽然从语法上来说，析构函数中是可以抛出异常的，但是抛出异常会引发一些问题，包括：<br>如果析构函数抛出异常，但是在异常抛出的时候对象的部分资源已经被销毁，这可能导致资源泄漏或者不一致的状态</p>
+<h2 id="c-stl中有没有线程安全的容器"><a href="#c-stl中有没有线程安全的容器" class="headerlink" title="c++ stl中有没有线程安全的容器"></a>c++ stl中有没有线程安全的容器</h2><p>c++stl中的容器一般都是线程不安全的，但是可以通过增加互斥锁来达到这样一个目的，但是会导致stl的性能下降</p>
+<h2 id="用到过那些C-11新特性"><a href="#用到过那些C-11新特性" class="headerlink" title="用到过那些C++11新特性"></a><strong>用到过那些C++11新特性</strong></h2><p>auto：让编译器在编译的时候就推导出变量的类型；<br>decltype：推到表达式的类型；<br>智能指针：智能指针是C++11库里的一个高级指针类，它能够自动管理动态分配的内存资源，并在适当的时候释放该资源，避免了内存泄漏和野指针等问题，</p>
+<h2 id="数据结构栈和队列的区别？一般用在哪些场景，举例，栈和队列经常用的操作"><a href="#数据结构栈和队列的区别？一般用在哪些场景，举例，栈和队列经常用的操作" class="headerlink" title="数据结构栈和队列的区别？一般用在哪些场景，举例，栈和队列经常用的操作"></a>数据结构栈和队列的区别？一般用在哪些场景，举例，栈和队列经常用的操作</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">栈是先入后出，队列是先入先出，</span><br></pre></td></tr></table></figure>
+
+<h2 id="介绍一下-堆-这个数据结构？"><a href="#介绍一下-堆-这个数据结构？" class="headerlink" title="介绍一下 堆 这个数据结构？"></a>介绍一下 堆 这个数据结构？</h2><p>堆是一个满足父子结点条件的完全二叉树，例如大根堆就是根节点是最大值</p>
+<h2 id="介绍一下动态规划的思想？上楼梯问题了解吗？用了动态规划和暴力时间复杂度分别是多少？"><a href="#介绍一下动态规划的思想？上楼梯问题了解吗？用了动态规划和暴力时间复杂度分别是多少？" class="headerlink" title="介绍一下动态规划的思想？上楼梯问题了解吗？用了动态规划和暴力时间复杂度分别是多少？"></a>介绍一下动态规划的思想？上楼梯问题了解吗？用了动态规划和暴力时间复杂度分别是多少？</h2><p>动态规划的思想类似于“我们要模拟完成一个大任务”，这个大任务可以分成若干个小任务，每个任务有若干种决策，每个任务完成后，就到达了一个阶段性状态，动态规划时间复杂度为O(n)</p>
+<h2 id="什么是稳定排序？"><a href="#什么是稳定排序？" class="headerlink" title="什么是稳定排序？"></a>什么是稳定排序？</h2><p>稳定排序指具有多个相同关键字的序列经过排序之后，这些记录的相对次序不变，则是稳定排序，稳定排序：冒泡排序，基数排序<br>不稳定排序：堆排序，快排</p>
+<h2 id="智能指针？三大智能指针内部实现和做什么的"><a href="#智能指针？三大智能指针内部实现和做什么的" class="headerlink" title="智能指针？三大智能指针内部实现和做什么的"></a>智能指针？三大智能指针内部实现和做什么的</h2><p>智能指针是C++11库里的一个高级指针类，它能够自动管理动态分配的内存资源，并在适当的时候释放该资源，避免了内存泄漏和野指针等问题，</p>
+<p>常见的智能指针unique_ptr，shared_ptr，weak_ptr<br>shared_ptr通常用于一些资源创建昂贵比较耗时的场景，当需要共享资源的所有权时，例如，一个资源需要被多个对象共享，但是不知道哪个对象会最后释放它，这时候就可以使用std::shared_ptr<T>。<br>unique_ptr“独占”所指向的对象，unique_ptr有更小的内存，而且不需要维护引用计数，因此它的性能更好。当我们需要独占所指向的对象时，应该优先使用std::unique_ptr<br>weak_ptr，weak_ptr一般是通过shared_ptr来创建的，weak_ptr用来指向shared_ptr指向的对象，但是不会增加sheared_ptr的引用计数。只是一个观察者的角色，通过观察shared_ptr来判定资源是否存在<br>weak_ptr持有的引用计数，不是资源的引用计数，而是同一个资源的观察者的计数<br>weak_ptr没有提供常用的指针操作，无法直接访问资源，需要先通过lock方法提升为shared_ptr强智能指针，才能访问资源</p>
+<p>shared_ptr实现原理：<br>主要涉及到引用计数和析构函数<br>shared_ptr 通过一个引用计数器来跟踪共享对象的引用次数。每当一个新的 shared_ptr 对象指向某个动态分配的内存资源时，引用计数器就会增加。当 shared_ptr 对象超出作用域、被赋予新值、或者被显式调用 reset() 等函数释放资源时，引用计数器就会减少。当引用计数器减少到零时，表示没有 shared_ptr 对象指向该内存资源，于是释放内存资源并销毁相关的控制块。</p>
+<p>shared_ptr 使用一个控制块来管理引用计数和指向动态内存的指针。主要是用来当没有指针指向动态内存的时候，能够正确的释放动态内存</p>
+<p>shared_ptr 的析构函数被设计为自动释放所管理的内存资源。当 shared_ptr 对象超出其作用域时，析构函数会自动被调用，引用计数减少，当引用计数减为零时，控制块会释放动态内存资源，从而避免内存泄漏。</p>
+<p>unique_ptr实现原理：<br>独占所有权：<br>unique_ptr 通过设计原则来保证对于同一个动态分配的内存资源，同一时间只能有一个 unique_ptr 指向它。这种独占所有权的设计使得 unique_ptr 不需要维护引用计数，从而避免了引用计数的开销。<br>控制块：<br>与 shared_ptr 类似，unique_ptr 也使用一个控制块来管理动态分配的内存资源。控制块通常包含一个指针成员，指向动态分配的内存资源，以及一个析构函数，用于释放内存资源。<br>析构函数：<br>unique_ptr 的析构函数被设计为自动释放所管理的内存资源。当 unique_ptr 对象超出其作用域时，析构函数会自动被调用，从而释放动态内存资源，避免内存泄漏。<br>移动语义：<br>移动语义是指unique_ptr可以将内存的所有权转让给其他的unique_ptr，使得在函数返回值或者容器元素传递时，可以高效的转移所有权，而不用将资源释放了，再将所有权转让。</p>
+<p>shared_ptr和unique_ptr都有一个控制块，它主要用来管理内存资源的，也就是当没有指针指向它的时候，用来释放内存资源的 </p>
+<h2 id="为什么c-11要设计move"><a href="#为什么c-11要设计move" class="headerlink" title="为什么c++11要设计move"></a>为什么c++11要设计move</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">为了减少无意义的拷贝和减少内存资源的申请和释放</span><br></pre></td></tr></table></figure>
+
+<h2 id="如果要你设计一个shared-ptr指针，你会怎么设计-有哪些成员函数、成员变量"><a href="#如果要你设计一个shared-ptr指针，你会怎么设计-有哪些成员函数、成员变量" class="headerlink" title="如果要你设计一个shared_ptr指针，你会怎么设计(有哪些成员函数、成员变量)"></a>如果要你设计一个shared_ptr指针，你会怎么设计(有哪些成员函数、成员变量)</h2><p>这个类设计中，SharedPtr类包含了一个指向被管理资源的指针ptr和一个引用计数的指针refCount。当有新的SharedPtr对象指向相同资源时，它们共享同一个refCount，以便正确地跟踪引用计数。当最后一个SharedPtr对象销毁时，释放被管理资源。</p>
+<p>这个类还提供了拷贝构造函数、析构函数、赋值运算符重载，以及解引用操作符和成员访问操作符，使得其行为类似于原生指针。此外，还提供了use_count()函数用于获取当前引用计数，以及isNull()函数用于检查是否为空指针。</p>
+<h2 id="vector扩容机制："><a href="#vector扩容机制：" class="headerlink" title="vector扩容机制："></a>vector扩容机制：</h2><p>当向vector中插入元素时，如果元素有效个数size与空间容量capacity相等时，vector内部会触发扩容机制<br>vector的扩容会<br>1：拷贝旧元素<br>2：释放旧空间</p>
+<p>因为每次扩容都会拷贝元素并且释放旧空间，因此会产生一系列问题：<br>内存分配和复制：每次扩容都需要分配新的内存并复制旧元素，这是一个耗时的操作。<br>迭代器失效：扩容后，所有指向旧元素的迭代器、指针和引用都会失效。<br>频繁扩容：如果vector每次扩容的空间太小，可能会导致频繁扩容，影响性能。</p>
+<p>为了避免这些问题，可以采取以下措施：<br>预留容量：如果你提前知道需要存储的元素数量，可以使用reserve()方法预先分配足够的内存。<br>减少扩容次数：通过合理选择初始容量或使用reserve()来减少扩容的次数。</p>
+<p>windows使用1.5倍扩容，linux使用2倍扩容</p>
+<h2 id="函数的调用过程："><a href="#函数的调用过程：" class="headerlink" title="函数的调用过程："></a>函数的调用过程：</h2><p>当程序执行到一个函数调用语句时，控制流将跳转到被调用函数的起始位置，在函数内部，会创建局部变量来存储参数和在函数内部定义的变量。函数的代码被执行，在函数执行期间，程序可能会调用其他函数。如果函数有返回语句，它将返回一个值。在这种情况下，函数调用表达式可以被替换为返回值。<br>这里面还涉及到函数栈，每当调用函数的时候，都会创建一个函数栈帧(调用帧)并推入函数栈的顶部，</p>
+<p>多态是靠覆盖来实现的，派生类的对象可以赋值给基类的引用，具体调用那个虚函数是看对象是那个类型</p>
+<h2 id="C-为什么使用红黑树"><a href="#C-为什么使用红黑树" class="headerlink" title="C++为什么使用红黑树?"></a>C++为什么使用红黑树?</h2><p>红黑树(红黑树的五个特点)：红黑树，一种二叉查找树(二叉查找树表示树已经排序了，左子树小于根节点，右子树大于)，但在每个结点上增加一个存储位表示结点的颜色，二叉查找树的查找时间为O(lgn)<br>    1.节点要么为黑色要么为红色<br>    2.根节点为黑色<br>    3.叶子节点(Nil空节点)为黑色<br>    4.红色节点的孩子都为黑色节点<br>    5.任一节点到叶子节点的路径中黑色节点的数量一致。</p>
+<h2 id="讲一下set和unordered-set"><a href="#讲一下set和unordered-set" class="headerlink" title="讲一下set和unordered_set"></a>讲一下set和unordered_set</h2><p>set的底层是红黑树，unordered_set底层是哈希结构<br>set和unordered_set区别在于unordered_set不能对加入的数据进行自动排序<br>这两者都不能对容器内的元素进行随意更改数值，只能先删除之后再插入进行修改数值<br>set的插入查找删除操作因为底层是红黑树，所以时间复杂度是O(logn)，而unordered_set是常数级别的O(N);</p>
+<h2 id="什么时候必须使用初始化列表"><a href="#什么时候必须使用初始化列表" class="headerlink" title="什么时候必须使用初始化列表"></a>什么时候必须使用初始化列表</h2><ol>
+<li>当初始化一个引用成员变量时；</li>
+<li>初始化一个const成员变量时；<br>初始化列表中的初始化顺序是由类中的成员声明顺序决定的，不是初始化列表中的排列顺序决定的。</li>
+</ol>
+<h2 id="C-STL迭代器的原理"><a href="#C-STL迭代器的原理" class="headerlink" title="C++STL迭代器的原理"></a>C++STL迭代器的原理</h2><p>在C++中的STL容器中，有些容器（vector）可以通过下标索引的方式访问容器里面的数据，但是大部分的容器不能使用这种方式访问容器中的元素。为了统一不同容器的访问方式，STL为每种容器在实现的时候设计了一个内嵌的iterator类，迭代器的作用就是提供一个遍历容器内部所有元素的接口，因此迭代器的内部必须保存一个与容器相关联的指针，然后重载各种运算操作来方便遍历，例如++，——等运算符，<br>这个类似于智能指针，智能指针也是通过封装一个指针然后通过引用计数或者其他方法来达到自动释放内存的功能，智能指针也需要对-&gt;,++等运算符进行重载</p>
+<h2 id="什么是内存对齐"><a href="#什么是内存对齐" class="headerlink" title="什么是内存对齐"></a>什么是内存对齐</h2><p>内存对齐是指数据在内存中存储时按照一定规则进行排列，使得数据存储的起始地址符合特定的规定，在内存对齐的概念中，最常见的是按字节对齐。在按字节对齐的情况下，数据的起始地址必须是该数据类型所占内存字节大小的整数倍</p>
+<h2 id="map的迭代器失效怎么办"><a href="#map的迭代器失效怎么办" class="headerlink" title="map的迭代器失效怎么办"></a>map的迭代器失效怎么办</h2><p>删除STL容器vector、map中的元素，容易引起迭代器失效问题。<br>对于vector、deque，他们是序列式容器；当当前元素的iterator被删除后，其后的所有元素的迭代器都会失效，这是因为vector，deque都是连续存储的一段空间，当对其进行erase操作时，其后的每一个元素都会向前移一个位置。迭代器失效时会返回下一个有效的迭代器，it&#x3D;erase(it)。处理方式见，代码1-2。</p>
+<p>对于list,set,map，删除时只有被删除节点迭代器失效，处理方式在当前迭代器失效前指向下一个迭代器，即erase(it++)。</p>
+<p>这里主要解释一下erase(it++)的执行过程：这句话分三步走，先把iter传值到erase里面，然后iter自增，然后执行erase,所以iter在失效前已经自增了。</p>
+</article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta"><i class="fas fa-circle-user fa-fw"></i>Author: </span><span class="post-copyright-info"><a href="http://example.com">John Doe</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta"><i class="fas fa-square-arrow-up-right fa-fw"></i>Link: </span><span class="post-copyright-info"><a href="http://example.com/2024/05/10/C/">http://example.com/2024/05/10/C/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta"><i class="fas fa-circle-exclamation fa-fw"></i>Copyright Notice: </span><span class="post-copyright-info">All articles in this blog are licensed under <a target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a> unless stating additionally.</span></div></div><div class="tag_share"><div class="post-meta__tag-list"></div><div class="post_share"><div class="social-share" data-image="https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1.1.3/sharejs/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1.1.3/sharejs/dist/js/social-share.min.js" defer></script></div></div><nav class="pagination-post" id="pagination"><div class="prev-post pull-left"><a href="/2024/05/10/%E9%A1%B9%E7%9B%AE/" title="项目"><div class="cover" style="background: var(--default-bg-color)"></div><div class="pagination-info"><div class="label">Previous</div><div class="prev_info">项目</div></div></a></div><div class="next-post pull-right"><a href="/2024/05/10/Mysql/" title="Mysql"><div class="cover" style="background: var(--default-bg-color)"></div><div class="pagination-info"><div class="label">Next</div><div class="next_info">Mysql</div></div></a></div></nav></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src="https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">John Doe</div><div class="author-info__description"></div></div><div class="card-info-data site-data is-center"><a href="/archives/"><div class="headline">Articles</div><div class="length-num">8</div></a><a href="/tags/"><div class="headline">Tags</div><div class="length-num">0</div></a><a href="/categories/"><div class="headline">Categories</div><div class="length-num">0</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/xxxxxx"><i class="fab fa-github"></i><span>Follow Me</span></a></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>Announcement</span></div><div class="announcement_content">This is my Blog</div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>Contents</span><span class="toc-percentage"></span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#C-C"><span class="toc-number">1.</span> <span class="toc-text">C&#x2F;C++:</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#C-%E6%9C%89%E4%BB%80%E4%B9%88%E5%85%B3%E9%94%AE%E5%AD%97"><span class="toc-number">1.1.</span> <span class="toc-text">C++有什么关键字</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#C-%E4%BB%8E%E4%BB%A3%E7%A0%81%E5%88%B0%E5%8F%AF%E6%89%A7%E8%A1%8C%E7%A8%8B%E5%BA%8F%E4%B9%8B%E9%97%B4%E7%BB%8F%E5%8E%86%E4%BA%86%E4%BB%80%E4%B9%88"><span class="toc-number">1.2.</span> <span class="toc-text">C++从代码到可执行程序之间经历了什么</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#C%E8%AF%AD%E8%A8%80%E6%9C%89%E5%93%AA%E4%BA%9B%E5%AD%98%E5%82%A8%E7%B1%BB%E5%9E%8B%EF%BC%9A"><span class="toc-number">1.3.</span> <span class="toc-text">C语言有哪些存储类型：</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#map%E4%B8%8Eset%E7%9A%84%E5%8C%BA%E5%88%AB%E5%92%8C%E5%BA%95%E5%B1%82%E5%AE%9E%E7%8E%B0%EF%BC%9A"><span class="toc-number">1.4.</span> <span class="toc-text">map与set的区别和底层实现：</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#vector%E5%92%8Clist%E7%9A%84%E5%8C%BA%E5%88%AB%E6%98%AF%E4%BB%80%E4%B9%88-%E6%95%B0%E7%BB%84%E5%92%8C%E9%93%BE%E8%A1%A8"><span class="toc-number">1.5.</span> <span class="toc-text">vector和list的区别是什么(数组和链表)</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%8C%87%E9%92%88%E5%92%8C%E5%BC%95%E7%94%A8%E7%9A%84%E5%8C%BA%E5%88%AB"><span class="toc-number">1.6.</span> <span class="toc-text">指针和引用的区别</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%8E%92%E5%BA%8F%E7%9A%84%E6%97%B6%E9%97%B4%E5%A4%8D%E6%9D%82%E5%BA%A6%EF%BC%9A"><span class="toc-number">1.7.</span> <span class="toc-text">排序的时间复杂度：</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#C-%E4%B8%ADstruct%E5%92%8Cclass%E7%9A%84%E5%8C%BA%E5%88%AB"><span class="toc-number">1.8.</span> <span class="toc-text">C++中struct和class的区别</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#strcpy%E5%92%8Cmemcpy%E7%9A%84%E5%8C%BA%E5%88%AB"><span class="toc-number">1.9.</span> <span class="toc-text">strcpy和memcpy的区别</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%85%A8%E5%B1%80%E5%8F%98%E9%87%8F%E5%92%8Cstatic%E5%85%A8%E5%B1%80%E5%8F%98%E9%87%8F%E7%9A%84%E5%8C%BA%E5%88%AB"><span class="toc-number">1.10.</span> <span class="toc-text">全局变量和static全局变量的区别</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%BF%AB%E9%80%9F%E6%8E%92%E5%BA%8F%E5%92%8C%E5%BD%92%E5%B9%B6%E6%8E%92%E5%BA%8F"><span class="toc-number">1.11.</span> <span class="toc-text">快速排序和归并排序</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#sort%E5%87%BD%E6%95%B0%E5%86%85%E9%83%A8%E5%A6%82%E4%BD%95%E5%AE%9E%E7%8E%B0"><span class="toc-number">1.12.</span> <span class="toc-text">sort函数内部如何实现</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%80%8E%E4%B9%88%E8%A7%A3%E5%86%B3%E9%80%92%E5%BD%92%E8%BF%87%E6%B7%B1%E5%BC%95%E5%8F%91%E7%9A%84%E6%A0%88%E6%BA%A2%E5%87%BA%E9%97%AE%E9%A2%98%EF%BC%9F"><span class="toc-number">1.13.</span> <span class="toc-text">怎么解决递归过深引发的栈溢出问题？</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#unordered-map-rehash%E8%BF%87%E7%A8%8B"><span class="toc-number">1.14.</span> <span class="toc-text">unordered_map rehash过程</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#c-c-%E7%9A%84%E5%8C%BA%E5%88%AB%EF%BC%9A"><span class="toc-number">1.15.</span> <span class="toc-text">c&#x2F;c++的区别：</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%99%9A%E5%87%BD%E6%95%B0%E5%92%8C%E7%BA%AF%E8%99%9A%E5%87%BD%E6%95%B0%E7%9A%84%E5%8C%BA%E5%88%AB%EF%BC%9A"><span class="toc-number">1.16.</span> <span class="toc-text">虚函数和纯虚函数的区别：</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%9B%B6%E6%8B%B7%E8%B4%9D"><span class="toc-number">1.17.</span> <span class="toc-text">零拷贝</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%80%E4%B8%AA%E7%A9%BA%E7%B1%BB%E4%BC%9A%E9%BB%98%E8%AE%A4%E6%B7%BB%E5%8A%A0%E5%93%AA%E4%BA%9B%E5%87%BD%E6%95%B0"><span class="toc-number">1.18.</span> <span class="toc-text">一个空类会默认添加哪些函数</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BB%80%E4%B9%88%E6%98%AF%E4%B8%80%E8%87%B4%E6%80%A7%E5%93%88%E5%B8%8C"><span class="toc-number">1.19.</span> <span class="toc-text">什么是一致性哈希</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%87%8D%E8%BD%BD%E5%92%8C%E8%A6%86%E7%9B%96-%E9%87%8D%E5%86%99-%E7%9A%84%E5%8C%BA%E5%88%AB"><span class="toc-number">1.20.</span> <span class="toc-text">重载和覆盖(重写)的区别</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%B5%85%E6%8B%B7%E8%B4%9D%E5%92%8C%E6%B7%B1%E6%8B%B7%E8%B4%9D%E7%9A%84%E5%8C%BA%E5%88%AB"><span class="toc-number">1.21.</span> <span class="toc-text">浅拷贝和深拷贝的区别</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BB%80%E4%B9%88%E6%98%AF%E5%86%85%E5%AD%98%E6%B3%84%E9%9C%B2%EF%BC%8C%E5%A6%82%E4%BD%95%E6%A3%80%E6%B5%8B%E4%B8%8E%E9%81%BF%E5%85%8D"><span class="toc-number">1.22.</span> <span class="toc-text">什么是内存泄露，如何检测与避免</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%B1%BB%E6%88%90%E5%91%98%E5%88%9D%E5%A7%8B%E5%8C%96%E6%96%B9%E5%BC%8F%EF%BC%9F%E5%8C%BA%E5%88%AB%EF%BC%9F%E6%9E%84%E9%80%A0%E5%87%BD%E6%95%B0%E7%9A%84%E6%89%A7%E8%A1%8C%E9%A1%BA%E5%BA%8F-%EF%BC%9F%E4%B8%BA%E4%BB%80%E4%B9%88%E7%94%A8%E6%88%90%E5%91%98%E5%88%9D%E5%A7%8B%E5%8C%96%E5%88%97%E8%A1%A8%E4%BC%9A%E5%BF%AB%E4%B8%80%E4%BA%9B"><span class="toc-number">1.23.</span> <span class="toc-text">类成员初始化方式？区别？构造函数的执行顺序 ？为什么用成员初始化列表会快一些</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%80%BB%E7%BB%93%E4%B8%80%E4%B8%8B%E9%9D%99%E6%80%81%E7%BB%91%E5%AE%9A%E5%92%8C%E5%8A%A8%E6%80%81%E7%BB%91%E5%AE%9A%E7%9A%84%E5%8C%BA%E5%88%AB%EF%BC%9A"><span class="toc-number">1.24.</span> <span class="toc-text">总结一下静态绑定和动态绑定的区别：</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%99%9A%E5%87%BD%E6%95%B0%E8%A1%A8"><span class="toc-number">1.25.</span> <span class="toc-text">虚函数表</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%BA%E4%BB%80%E4%B9%88%E6%9E%90%E6%9E%84%E5%87%BD%E6%95%B0%E4%B8%80%E8%88%AC%E5%86%99%E6%88%90%E8%99%9A%E5%87%BD%E6%95%B0"><span class="toc-number">1.26.</span> <span class="toc-text">为什么析构函数一般写成虚函数</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%BA%E4%BB%80%E4%B9%88%E6%9E%84%E9%80%A0%E5%87%BD%E6%95%B0%E4%B8%8D%E8%83%BD%E6%98%AF%E8%99%9A%E5%87%BD%E6%95%B0"><span class="toc-number">1.27.</span> <span class="toc-text">为什么构造函数不能是虚函数</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BB%80%E4%B9%88%E6%97%B6%E5%80%99%E4%BC%9A%E8%B0%83%E7%94%A8%E6%8B%B7%E8%B4%9D%E6%9E%84%E9%80%A0%E5%87%BD%E6%95%B0"><span class="toc-number">1.28.</span> <span class="toc-text">什么时候会调用拷贝构造函数</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%9E%90%E6%9E%84%E5%87%BD%E6%95%B0%E5%8F%AF%E4%BB%A5%E6%8A%9B%E5%87%BA%E5%BC%82%E5%B8%B8%E5%90%97%EF%BC%9F%E4%B8%BA%E4%BB%80%E4%B9%88%E4%B8%8D%E8%83%BD%E6%8A%9B%E5%87%BA%E5%BC%82%E5%B8%B8%EF%BC%9F%E9%99%A4%E4%BA%86%E8%B5%84%E6%BA%90%E6%B3%84%E9%9C%B2%EF%BC%8C%E8%BF%98%E6%9C%89%E5%85%B6%E4%BB%96%E9%9C%80%E8%80%83%E8%99%91%E7%9A%84%E5%9B%A0%E7%B4%A0%E5%90%97%EF%BC%9F"><span class="toc-number">1.29.</span> <span class="toc-text">析构函数可以抛出异常吗？为什么不能抛出异常？除了资源泄露，还有其他需考虑的因素吗？</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#c-stl%E4%B8%AD%E6%9C%89%E6%B2%A1%E6%9C%89%E7%BA%BF%E7%A8%8B%E5%AE%89%E5%85%A8%E7%9A%84%E5%AE%B9%E5%99%A8"><span class="toc-number">1.30.</span> <span class="toc-text">c++ stl中有没有线程安全的容器</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%94%A8%E5%88%B0%E8%BF%87%E9%82%A3%E4%BA%9BC-11%E6%96%B0%E7%89%B9%E6%80%A7"><span class="toc-number">1.31.</span> <span class="toc-text">用到过那些C++11新特性</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E6%A0%88%E5%92%8C%E9%98%9F%E5%88%97%E7%9A%84%E5%8C%BA%E5%88%AB%EF%BC%9F%E4%B8%80%E8%88%AC%E7%94%A8%E5%9C%A8%E5%93%AA%E4%BA%9B%E5%9C%BA%E6%99%AF%EF%BC%8C%E4%B8%BE%E4%BE%8B%EF%BC%8C%E6%A0%88%E5%92%8C%E9%98%9F%E5%88%97%E7%BB%8F%E5%B8%B8%E7%94%A8%E7%9A%84%E6%93%8D%E4%BD%9C"><span class="toc-number">1.32.</span> <span class="toc-text">数据结构栈和队列的区别？一般用在哪些场景，举例，栈和队列经常用的操作</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BB%8B%E7%BB%8D%E4%B8%80%E4%B8%8B-%E5%A0%86-%E8%BF%99%E4%B8%AA%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%EF%BC%9F"><span class="toc-number">1.33.</span> <span class="toc-text">介绍一下 堆 这个数据结构？</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BB%8B%E7%BB%8D%E4%B8%80%E4%B8%8B%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92%E7%9A%84%E6%80%9D%E6%83%B3%EF%BC%9F%E4%B8%8A%E6%A5%BC%E6%A2%AF%E9%97%AE%E9%A2%98%E4%BA%86%E8%A7%A3%E5%90%97%EF%BC%9F%E7%94%A8%E4%BA%86%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92%E5%92%8C%E6%9A%B4%E5%8A%9B%E6%97%B6%E9%97%B4%E5%A4%8D%E6%9D%82%E5%BA%A6%E5%88%86%E5%88%AB%E6%98%AF%E5%A4%9A%E5%B0%91%EF%BC%9F"><span class="toc-number">1.34.</span> <span class="toc-text">介绍一下动态规划的思想？上楼梯问题了解吗？用了动态规划和暴力时间复杂度分别是多少？</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BB%80%E4%B9%88%E6%98%AF%E7%A8%B3%E5%AE%9A%E6%8E%92%E5%BA%8F%EF%BC%9F"><span class="toc-number">1.35.</span> <span class="toc-text">什么是稳定排序？</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%99%BA%E8%83%BD%E6%8C%87%E9%92%88%EF%BC%9F%E4%B8%89%E5%A4%A7%E6%99%BA%E8%83%BD%E6%8C%87%E9%92%88%E5%86%85%E9%83%A8%E5%AE%9E%E7%8E%B0%E5%92%8C%E5%81%9A%E4%BB%80%E4%B9%88%E7%9A%84"><span class="toc-number">1.36.</span> <span class="toc-text">智能指针？三大智能指针内部实现和做什么的</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%BA%E4%BB%80%E4%B9%88c-11%E8%A6%81%E8%AE%BE%E8%AE%A1move"><span class="toc-number">1.37.</span> <span class="toc-text">为什么c++11要设计move</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%A6%82%E6%9E%9C%E8%A6%81%E4%BD%A0%E8%AE%BE%E8%AE%A1%E4%B8%80%E4%B8%AAshared-ptr%E6%8C%87%E9%92%88%EF%BC%8C%E4%BD%A0%E4%BC%9A%E6%80%8E%E4%B9%88%E8%AE%BE%E8%AE%A1-%E6%9C%89%E5%93%AA%E4%BA%9B%E6%88%90%E5%91%98%E5%87%BD%E6%95%B0%E3%80%81%E6%88%90%E5%91%98%E5%8F%98%E9%87%8F"><span class="toc-number">1.38.</span> <span class="toc-text">如果要你设计一个shared_ptr指针，你会怎么设计(有哪些成员函数、成员变量)</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#vector%E6%89%A9%E5%AE%B9%E6%9C%BA%E5%88%B6%EF%BC%9A"><span class="toc-number">1.39.</span> <span class="toc-text">vector扩容机制：</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%87%BD%E6%95%B0%E7%9A%84%E8%B0%83%E7%94%A8%E8%BF%87%E7%A8%8B%EF%BC%9A"><span class="toc-number">1.40.</span> <span class="toc-text">函数的调用过程：</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#C-%E4%B8%BA%E4%BB%80%E4%B9%88%E4%BD%BF%E7%94%A8%E7%BA%A2%E9%BB%91%E6%A0%91"><span class="toc-number">1.41.</span> <span class="toc-text">C++为什么使用红黑树?</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%AE%B2%E4%B8%80%E4%B8%8Bset%E5%92%8Cunordered-set"><span class="toc-number">1.42.</span> <span class="toc-text">讲一下set和unordered_set</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BB%80%E4%B9%88%E6%97%B6%E5%80%99%E5%BF%85%E9%A1%BB%E4%BD%BF%E7%94%A8%E5%88%9D%E5%A7%8B%E5%8C%96%E5%88%97%E8%A1%A8"><span class="toc-number">1.43.</span> <span class="toc-text">什么时候必须使用初始化列表</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#C-STL%E8%BF%AD%E4%BB%A3%E5%99%A8%E7%9A%84%E5%8E%9F%E7%90%86"><span class="toc-number">1.44.</span> <span class="toc-text">C++STL迭代器的原理</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BB%80%E4%B9%88%E6%98%AF%E5%86%85%E5%AD%98%E5%AF%B9%E9%BD%90"><span class="toc-number">1.45.</span> <span class="toc-text">什么是内存对齐</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#map%E7%9A%84%E8%BF%AD%E4%BB%A3%E5%99%A8%E5%A4%B1%E6%95%88%E6%80%8E%E4%B9%88%E5%8A%9E"><span class="toc-number">1.46.</span> <span class="toc-text">map的迭代器失效怎么办</span></a></li></ol></li></ol></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>Recent Post</span></div><div class="aside-list"><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2024/05/10/%E9%A1%B9%E7%9B%AE/" title="项目">项目</a><time datetime="2024-05-10T05:35:08.000Z" title="Created 2024-05-10 13:35:08">2024-05-10</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2024/05/10/C/" title="C++">C++</a><time datetime="2024-05-10T05:32:38.000Z" title="Created 2024-05-10 13:32:38">2024-05-10</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2024/05/10/Mysql/" title="Mysql">Mysql</a><time datetime="2024-05-10T05:31:54.000Z" title="Created 2024-05-10 13:31:54">2024-05-10</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2024/05/10/%E5%B5%8C%E5%85%A5%E5%BC%8F/" title="嵌入式">嵌入式</a><time datetime="2024-05-10T05:30:42.000Z" title="Created 2024-05-10 13:30:42">2024-05-10</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2024/05/10/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/" title="操作系统">操作系统</a><time datetime="2024-05-10T05:27:52.000Z" title="Created 2024-05-10 13:27:52">2024-05-10</time></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2020 - 2024 By John Doe</div><div class="framework-info"><span>Framework </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>Theme </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="Read Mode"><i class="fas fa-book-open"></i></button><button id="darkmode" type="button" title="Toggle Between Light And Dark Mode"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="Toggle between Single-column and Double-column"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside-config" type="button" title="Setting"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="Table Of Contents"><i class="fas fa-list-ul"></i></button><button id="go-up" type="button" title="Back To Top"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js?v=4.13.0"></script><script src="/js/main.js?v=4.13.0"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0.33/dist/fancybox/fancybox.umd.min.js"></script><div class="js-pjax"></div><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div></body></html>
